@@ -47,18 +47,15 @@ export default {
 
 <style>
     .product {
-        padding-top: 40px;
+        padding-top: 50px;
     }
     .product-item {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-top: 30px;
+        padding-top: 50px;
     }
     .product-words {
         padding-top: 20px;
-    }
-    .product-image {
-       
     }
     .product-item:nth-child(even) .product-words {
         grid-column: 1;
@@ -117,5 +114,11 @@ export default {
             max-width: 300px;
             align-self: center;
         }
+    }
+    @media only screen and (max-width: 768px) {
+        .product-item {
+            display: flex;
+            flex-direction: column;
+    }
     }
 </style>

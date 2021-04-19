@@ -14,17 +14,26 @@ export default {
 
 <style>
     .about {
-        background-image: url("../assets/image 4.svg");
-        background-repeat: no-repeat;
         text-align: center;
         background-color: #062815;
-        background-position: right;
         color: #fff;
         height: 348px;
         display: flex;
         align-items: center;
         flex-direction: column;
- 
+        z-index: 0;
+        position: relative;
+    }
+    .about::after {
+        position: absolute;
+        top: 0%;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: url("../assets/image 4.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+        mix-blend-mode: multiply;
     }
     .about-company {
         padding-top: 60px;
