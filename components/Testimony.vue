@@ -31,21 +31,21 @@ export default {
     padding: 30px 0;
   }
   .testimony-title {
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     color: #158146;
   }
   .testimony-description {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.1px;
   }
   .testimony-name {
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;

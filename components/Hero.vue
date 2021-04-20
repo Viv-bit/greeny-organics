@@ -56,7 +56,7 @@ export default {
         color: #158146;
     }
     .hero-title {
-        font-family: Playfair Display;
+        font-family: 'Playfair Display', serif;;
         font-size: 52px;
         font-weight: 900;
         letter-spacing: -1px;
@@ -68,7 +68,7 @@ export default {
 
     }
     .hero-description {
-        font-family: Raleway;
+        font-family: 'Raleway', sans-serif;;
         max-width: 445px;
         font-size: 14px;
         font-weight: 400;

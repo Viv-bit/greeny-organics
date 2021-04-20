@@ -17,10 +17,11 @@ export default {
         text-align: center;
         background-color: #062815;
         color: #fff;
-        height: 348px;
+        height: 380px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
         z-index: 0;
         position: relative;
     }
@@ -36,15 +37,14 @@ export default {
         mix-blend-mode: multiply;
     }
     .about-company {
-        padding-top: 60px;
         color: #C5DD71;
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.1px;
-
+        font-family: 'Playfair Display', serif;
     }
     .about-title {
-        font-family: Playfair Display;
+        font-family: 'Playfair Display', serif;
         font-size: 40px;
         font-weight: 700;
         letter-spacing: -0.5px;
@@ -53,11 +53,11 @@ export default {
         padding-top: 8px;
     }
     .about-description {
-        font-family: Raleway;
+        font-family: 'Raleway', sans-serif;
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.1px;
-        max-width: 540px;
+        max-width: 550px;
         padding-top: 10px;
     }
 

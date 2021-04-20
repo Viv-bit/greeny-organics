@@ -22,7 +22,7 @@ export default {
     padding: 50px 0;
   }
   .action-title {
-    font-family: Playfair Display;
+    font-family: 'Playfair Display', serif;;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;

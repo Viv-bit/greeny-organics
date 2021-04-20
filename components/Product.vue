@@ -52,6 +52,7 @@ export default {
     .product-item {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
         padding-top: 50px;
     }
     .product-words {
@@ -69,27 +70,24 @@ export default {
         padding-left: 50px;
     }
     .product-title {
-        font-family: Playfair Display;
+        font-family: 'Playfair Display', serif;;
         font-size: 24px;
         font-weight: 700;
         line-height: 32px;
-        letter-spacing: -0.1px;
         color: #158146;
         padding-bottom: 5px;
     }
     .product-description {
-        font-family: Raleway;
+        font-family: 'Raleway', sans-serif;;
         font-size: 16px;
         font-weight: 400;
-        letter-spacing: 0.1px;
         text-align: left;
         padding-bottom: 15px;
     }
     .product-direction {
-        font-family: Playfair Display;
+        font-family: 'Playfair Display', serif;;
         font-size: 16px;
         font-weight: 400;
-        letter-spacing: 0.1px;
         color: #158146;
     }
     .product-direction-detail{
@@ -99,10 +97,10 @@ export default {
         display: grid;
         grid-template-columns: 20px 1fr;
         grid-column-gap: 10px;
-        font-family: Raleway;
+        font-family: 'Raleway', sans-serif;;
         font-size: 16px;
         font-weight: 400;
-        letter-spacing: 0.1px;
+        margin-bottom: 10px;
     }
     @media only screen and (max-width: 1024px) {
         .product-image {
