@@ -13,26 +13,33 @@
       <nav class="header-nav"  v-bind:class="showToggle ? 'show' : '' " id="menu">
           <a href="#" class="header-nav-about">About</a>
           <a href="#" class="header-nav-contact">Contact Us</a>
-          <button>Buy Ambunu!</button>
+          <button @click="toggleStore"> Buy Ambunu!</button>
       </nav>
+      <Store :appearToggle="appearToogle" v-on:toCancel="toggleStore"/>
   </div>
 </template>
 
 <script>
-
+    import Store from "./Store"
 export default {
+    components: {
+        Store
+    },
     data: ()=> {
         return {
-            showToggle: false
+            showToggle: false,
+            appearToogle:false
         }
     },
     methods: {
         toggleMenu(){
            this.showToggle = !this.showToggle
+        },
+        toggleStore(){
+           this.appearToogle = !this.appearToogle
         }
-    }
-    
         
+    }       
     
 };
 </script>
@@ -65,6 +72,37 @@ export default {
         padding-right: 25px;
     }
 
+    .storeWrapper{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color : rgba(0, 0, 0, 0.2);
+        height: 100vh;
+        width: 100vw;
+    }
+    .store {
+        background-color: hsla(42, 62%, 96%, 1);
+        padding: 50px 60px;
+        width: 900px;
+        margin: 150px auto;
+        z-index: 100;
+    }
+    .storeWrapper.appear {
+        display: block;
+    }
+    @media only screen and (max-width: 1000px) {
+        .store {
+            display: none;
+            background-color: hsla(42, 62%, 96%, 1);
+            padding: 40px 30px;
+            position: absolute;
+            width: 700px;
+            margin: 0 auto;
+            top: 210px;
+            z-index: 100;
+        }
+    }
     @media only screen and (max-width: 700px) {
         .header-nav {
             display: none;
@@ -102,6 +140,15 @@ export default {
             padding-bottom: 25px;
             font-weight: 700;
             font-size: 18px;
+        }
+        .store {
+            display: none;
+            background-color: hsla(42, 62%, 96%, 1);
+            padding: 40px 30px;
+            position: absolute;
+            width: 100vw;
+            top: 150px;
+            z-index: 100;
         }
     }
 </style>
