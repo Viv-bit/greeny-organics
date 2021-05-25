@@ -93,7 +93,6 @@ export default {
     }
     @media only screen and (max-width: 1000px) {
         .store {
-            display: none;
             background-color: hsla(42, 62%, 96%, 1);
             padding: 40px 30px;
             position: absolute;
@@ -142,7 +141,6 @@ export default {
             font-size: 18px;
         }
         .store {
-            display: none;
             background-color: hsla(42, 62%, 96%, 1);
             padding: 40px 30px;
             position: absolute;
