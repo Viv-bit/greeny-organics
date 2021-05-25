@@ -1,23 +1,23 @@
 <template>
-<div v-bind:class="appearToggle ? 'appear' : '' " class="storeWrapper">
-    <div class="store">
-        <span  class="cancel-container">
-            <img @click="toggleStore" src="../assets/cancel.png" alt="Cancel" class="cancel">
-        </span>
-        
-        <h1 class="store-title">Now Available in your Favorite Ottawa Stores</h1>
+    <div class="storeWrapper" v-bind:class="appearToggle ? 'appear' : '' " >
+        <div class="store">
+            <span  class="cancel-container">
+                <img @click="toggleStore" src="../assets/cancel.png" alt="Cancel" class="cancel">
+            </span>
+            
+            <h1 class="store-title">Now Available in your Favorite Ottawa Stores</h1>
 
-        <div>
-            <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> ALL Geeland International Grocery Stores <span> (Ottawa & Gatineu) </span></p>
+            <div>
+                <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> ALL Geeland International Grocery Stores <span> (Ottawa & Gatineu) </span></p>
 
-            <p class="store-location"><img src="../assets/location.png" alt="Location" class="location">  African Queen <span> - 2430 Bank St, Ottawa, ON KTV OT7 </span></p>
+                <p class="store-location"><img src="../assets/location.png" alt="Location" class="location">  African Queen <span> - 2430 Bank St, Ottawa, ON KTV OT7 </span></p>
 
-            <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> M&J Tropical Supermarket  <span> - 1383 Clyde Ave, Nepean, ON K2G 3H7 </span></p>
+                <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> M&J Tropical Supermarket  <span> - 1383 Clyde Ave, Nepean, ON K2G 3H7 </span> </p>
 
-            <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> Africa World Market <span> - 1392 Cyrville Rd, Ottawa, ON KIL 3M9 </span></p>
+                <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> Africa World Market <span> - 1392 Cyrville Rd, Ottawa, ON KIL 3M9 </span></p>
+            </div>
         </div>
     </div>
-</div>
 </template>
 
 
@@ -40,7 +40,6 @@ export default {
         padding: 0 10px;
         display: grid;
         grid-template-columns: 1fr 72px;
-
     }
     .cancel {
         grid-column-start: 2;
