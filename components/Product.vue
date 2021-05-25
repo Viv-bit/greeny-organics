@@ -90,9 +90,6 @@ export default {
         font-weight: 400;
         color: #158146;
     }
-    .product-direction-detail{
-
-    }
     li {
         display: grid;
         grid-template-columns: 20px 1fr;
