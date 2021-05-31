@@ -50,6 +50,25 @@ button {
   background-color:#158146;
   font-weight: 700;
 }
+.storeWrapper{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color : rgba(0, 0, 0, 0.2);
+        height: 100vh;
+        width: 100vw;
+    }
+    .store {
+        background-color: hsla(42, 62%, 96%, 1);
+        padding: 50px 60px;
+        width: 900px;
+        margin: 150px auto;
+        z-index: 100;
+    }
+    .storeWrapper.appear {
+        display: block;
+    } 
 @media only screen and (max-width: 1270px) {
   .main {
     padding: 0 80px;

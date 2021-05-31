@@ -13,31 +13,34 @@
       <nav class="header-nav"  v-bind:class="showToggle ? 'show' : '' " id="menu">
           <a href="#" class="header-nav-about">About</a>
           <a href="#" class="header-nav-contact">Contact Us</a>
-          <button @click="toggleStore"> Buy Ambunu!</button>
+          <Button />
+          <!-- <button @click="toggleStore"> Buy Ambunu!</button> -->
       </nav>
-      <Store :appearToggle="appearToogle" v-on:toCancel="toggleStore"/>
+      <!-- <Store :appearToggle="appearToogle" v-on:toCancel="toggleStore"/> -->
   </div>
 </template>
 
 <script>
     import Store from "./Store"
+    import Button from "./Button"
 export default {
     components: {
-        Store
+        Store,
+        Button
     },
     data: ()=> {
         return {
-            showToggle: false,
-            appearToogle:false
+            showToggle: false
+            // appearToogle:false
         }
     },
     methods: {
         toggleMenu(){
            this.showToggle = !this.showToggle
-        },
-        toggleStore(){
-           this.appearToogle = !this.appearToogle
         }
+        // toggleStore(){
+        //    this.appearToogle = !this.appearToogle
+        // }
         
     }       
     

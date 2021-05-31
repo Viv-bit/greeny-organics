@@ -4,7 +4,7 @@
           <span class="hero-name">Ambunu Herbal Product</span>
           <h2 class="hero-title">Silky, soft and shiny hair in a single wash!</h2>
           <p class="hero-description">Ambunu contains saponin which gives it the ability to cleanse. It is an effective antioxidant, anti-inflammatory and an emollient. It also gives you stronger, thicker hair, prevents dry scalp and reduces hair loss.</p>
-          <button>Buy Ambunu!</button>
+         <Button />
       </div>
       
         <div class="hero-images">
@@ -16,8 +16,11 @@
 </template>
 
 <script>
+import Button from './Button'
 export default {
-
+   components: {
+       Button
+   } 
 }
 </script>
 

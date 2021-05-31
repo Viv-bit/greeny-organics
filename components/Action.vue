@@ -1,13 +1,16 @@
 <template>
   <div class="action">
       <h2 class="action-title">Get your 5 in 1 wonder product!</h2>
-      <button>Buy Ambunu!</button>
+      <Button />
   </div>
 </template>
 
 <script>
+import Button from './Button'
 export default {
-
+  components: {
+    Button
+  }
 }
 </script>
 

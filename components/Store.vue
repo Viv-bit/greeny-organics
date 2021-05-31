@@ -2,19 +2,18 @@
     <div class="storeWrapper" v-bind:class="appearToggle ? 'appear' : '' " >
         <div class="store">
             <span  class="cancel-container">
-                <img @click="toggleStore" src="../assets/cancel.png" alt="Cancel" class="cancel">
+                <img @click="toggleStore" src="../assets/cancel.png" alt="Cancel" class="cancel" />
             </span>
             
             <h1 class="store-title">Now Available in your Favorite Ottawa Stores</h1>
 
             <div>
-                <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> ALL Geeland International Grocery Stores <span> (Ottawa & Gatineu) </span></p>
+                <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> ALL Geeland International Grocery Stores <span> 1620 Walkley Rd, Ottawa ON K1V 6P5 & 10-1020 St. Laurent Blvd, Ottawa ON K1K 4S2 </span></p>
 
                 <p class="store-location"><img src="../assets/location.png" alt="Location" class="location">  African Queen <span> - 2430 Bank St, Ottawa, ON KTV OT7 </span></p>
 
-                <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> M&J Tropical Supermarket  <span> - 1383 Clyde Ave, Nepean, ON K2G 3H7 </span> </p>
-
                 <p class="store-location"><img src="../assets/location.png" alt="Location" class="location"> Africa World Market <span> - 1392 Cyrville Rd, Ottawa, ON KIL 3M9 </span></p>
+
             </div>
         </div>
     </div>
@@ -25,7 +24,7 @@
 
 export default {
     props: {
-        appearToggle:Boolean
+        appearToggle:false
     },
     methods: {
         toggleStore(){
@@ -35,7 +34,26 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.storeWrapper{
+        display: none;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        background-color : rgba(0, 0, 0, 0.2);
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+    }
+    .store {
+        background-color: hsla(42, 62%, 96%, 1);
+        padding: 50px 60px;
+        width: 900px;
+        margin: 150px auto;
+    }
+    .storeWrapper.appear {
+        display: block;
+    }
     .cancel-container {
         padding: 0 10px;
         display: grid;
