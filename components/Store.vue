@@ -44,6 +44,7 @@ export default {
         height: 100vh;
         width: 100vw;
         z-index: 100;
+        text-align: left;
     }
     .store {
         background-color: hsla(42, 62%, 96%, 1);
