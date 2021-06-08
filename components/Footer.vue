@@ -16,7 +16,7 @@
 
 
             <div class="footer-three">
-                <a href="#" class="footer-social"> <img src="../assets/instagram.png" alt="Instagram Icon" class="footer-social-icon"> Instagram</a>
+                <a href="https://www.instagram.com/greenyorganicsca/" target="_blank" class="footer-social"> <img src="../assets/instagram.png" alt="Instagram Icon" class="footer-social-icon"> Instagram</a>
                 <a href="#" class="footer-social"> <img src="../assets/facebook.png" alt="Facebook Icon" class="footer-social-icon"> Facebook</a>
                 <a href="#" class="footer-social"> <img src="../assets/twitter.png" alt="Twitter Icon" class="footer-social-icon"> Twitter</a>
             </div>
